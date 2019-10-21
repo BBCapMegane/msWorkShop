@@ -1,0 +1,14 @@
+@host=http://localhost:7071
+@prefix=api
+
+
+###
+# local GetProductのGETリクエスト
+POST {{host}}/api/CreateProduct
+
+{
+    "productId": "75542e38-563f-436f-adeb-f426f1dabb5c",
+    "productName": "Starfruit Explosion",
+    "productDescription": "This starfruit ice cream is out of this world!"
+}
+
