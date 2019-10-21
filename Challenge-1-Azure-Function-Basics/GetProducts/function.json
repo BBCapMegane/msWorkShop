@@ -1,6 +1,5 @@
 {
-  "bindings": [
-    {
+  "bindings": [{
       "authLevel": "function",
       "type": "httpTrigger",
       "direction": "in",
@@ -20,14 +19,9 @@
       "name": "productDoucment",
       "databaseName": "serverlessDB",
       "collectionName": "containerId",
-      "partitionKey": "productId",
       "connectionStringSetting": "CosmosConnectionString",
       "direction": "in",
-<<<<<<< HEAD
-      "sqlQuery": "SELECT * from c where c.productId = {productId}"
-=======
       "partitionKey": "productId"
->>>>>>> 6e7f19de0148f78f7cab09dd336a364538794774
     }
   ]
 }
