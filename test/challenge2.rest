@@ -12,3 +12,13 @@ POST {{host}}/api/CreateProduct
     "productDescription": "This starfruit ice cream is out of this world!"
 }
 
+###
+# AzureのAPIを叩く
+POST https://serverless-httptrigger.azurewebsites.net/api/CreateProduct?code=naMGJyU21l8nFIJQ2ULuzH8C2U5am2vzzjzVZIfeX10zL2eG3ahqeg==
+
+# 任意の値に変更。
+{
+    "productId": "test",
+    "productName": "test",
+    "productDescription": "This starfruit ice cream is out of this world!"
+}

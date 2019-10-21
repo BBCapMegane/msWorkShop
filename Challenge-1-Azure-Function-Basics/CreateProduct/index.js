@@ -15,6 +15,4 @@ module.exports = async function (context, req) {
         productDescription: req.body.productDescription,
         timestamp: timeStamp,
       });
-
-      context.done();
 };
