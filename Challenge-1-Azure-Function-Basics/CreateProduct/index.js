@@ -1,4 +1,4 @@
-module.exports = async function (context) {
+module.exports = async function (context, req) {
     
     // 以下の形式のドキュメントをCosmosDBに保存する。
     // {
@@ -10,9 +10,9 @@ module.exports = async function (context) {
     var timeStamp = new Date().toISOString();
 
     context.bindings.productDocument = JSON.stringify({
-        productId: context.bindings.myQueueItem.productId,
-        productName: context.bindings.myQueueItem.productName,
-        productDescription: context.bindings.myQueueItem.productDescription,
+        productId: req.body.productId,
+        productName: req.body.productName,
+        productDescription: req.body.productDescription,
         timestamp: timeStamp,
       });
 

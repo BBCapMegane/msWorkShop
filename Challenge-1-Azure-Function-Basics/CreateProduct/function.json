@@ -18,10 +18,10 @@
     {
       "name": "productDocument",
       "type": "cosmosDB",
-      "databaseName": "MyDatabase",
-      "collectionName": "MyCollection",
+      "databaseName": "serverlessDB",
+      "collectionName": "containerId",
       "createIfNotExists": true,
-      "connectionStringSetting": "MyAccount_COSMOSDB",
+      "connectionStringSetting": "CosmosConnectionString",
       "direction": "out"
   }
   ]
