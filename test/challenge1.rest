@@ -1,0 +1,16 @@
+@host=http://localhost:7071
+@prefix=api
+
+
+###
+# local GetProductのGETリクエスト
+@productId="4321"
+GET {{host}}/api/GetProduct?productId={{productId}}
+
+{
+}
+
+
+###
+# Azure
+GET https://serverless-httptrigger.azurewebsites.net/api/GetProduct?code=EFHqnklAvxFMGmjHzF4tCGfZzP0vJrxKniZPHPmsCuBFso96q9ZGKQ==&productId=1234
