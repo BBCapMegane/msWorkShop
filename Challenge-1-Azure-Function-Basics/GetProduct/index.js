@@ -3,11 +3,20 @@ module.exports = async function (context, req, productDocument) {
 
     if (req.query.productId) {
         context.log(productDocument)
+        let data = productDocument.filter(function(doc) {
+            return doc.productId === req.query.productId;
+        })
+
+        if(data.length == 0) {
+            context.res = {
+                status: 404
+            };
+            return
+        }
+
         context.res = {
             // status: 200, /* Defaults to 200 */
-            body: productDocument.filter(function(doc) {
-                return doc.productId === req.query.productId;
-            })
+            body: data
         };
     }
     else {
