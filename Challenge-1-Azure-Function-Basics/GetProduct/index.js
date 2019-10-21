@@ -5,7 +5,9 @@ module.exports = async function (context, req, productDocument) {
         context.log(productDocument)
         context.res = {
             // status: 200, /* Defaults to 200 */
-            body: "Starfruit Explosion " + productDocument
+            body: productDocument.filter(function(doc) {
+                return doc.productId === req.query.productId;
+            })
         };
     }
     else {
