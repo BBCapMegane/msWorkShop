@@ -14,6 +14,15 @@
       "type": "http",
       "direction": "out",
       "name": "res"
+    },
+    {
+      "type": "cosmosDB",
+      "name": "productDoucment",
+      "databaseName": "serverlessDB",
+      "collectionName": "containerId",
+      "connectionStringSetting": "CosmosConnectionString",
+      "direction": "in",
+      "Id": "75542e38-563f-436f-adeb-f426f1dabb5c"
     }
   ]
 }
