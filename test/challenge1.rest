@@ -4,7 +4,7 @@
 
 ###
 # local GetProductのGETリクエスト
-@productId="4321"
+@productId=test
 GET {{host}}/api/GetProduct?productId={{productId}}
 
 {
