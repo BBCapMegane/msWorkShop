@@ -7,7 +7,7 @@
 POST {{host}}/api/CreateProduct
 
 {
-    "productId": "75542e38-563f-436f-adeb-f426f1dabb5c",
+    "productId": "",
     "productName": "Starfruit Explosion",
     "productDescription": "This starfruit ice cream is out of this world!"
 }
@@ -18,7 +18,7 @@ POST https://serverless-httptrigger.azurewebsites.net/api/CreateProduct?code=naM
 
 # 任意の値に変更。
 {
-    "productId": "test",
-    "productName": "test",
-    "productDescription": "This starfruit ice cream is out of this world!"
+    "productId": "test2",
+    "productName": "test2",
+    "productDescription": "test2"
 }
